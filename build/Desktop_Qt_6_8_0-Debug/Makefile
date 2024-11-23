@@ -263,7 +263,6 @@ DIST          = /Qt/6.8.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/qt_config.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/spec_post.prf \
-		../../.qmake.stash \
 		/Qt/6.8.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/toolchain.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -502,7 +501,6 @@ Makefile: ../../tryicon.pro ../../../../Qt/6.8.0/gcc_64/mkspecs/features/spec_pr
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -734,7 +732,6 @@ Makefile: ../../tryicon.pro ../../../../Qt/6.8.0/gcc_64/mkspecs/features/spec_pr
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/qt_config.prf:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/spec_post.prf:
-.qmake.stash:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/toolchain.prf:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -1264,7 +1261,14 @@ main.o: ../../main.cpp ../../settingswidget.h \
 		../../../../Qt/6.8.0/gcc_64/include/QtGui/QAction \
 		../../../../Qt/6.8.0/gcc_64/include/QtCore/QFile \
 		../../../../Qt/6.8.0/gcc_64/include/QtCore/qfile.h \
-		../../../../Qt/6.8.0/gcc_64/include/QtCore/qfiledevice.h
+		../../../../Qt/6.8.0/gcc_64/include/QtCore/qfiledevice.h \
+		../../../../Qt/6.8.0/gcc_64/include/QtCore/QSharedMemory \
+		../../../../Qt/6.8.0/gcc_64/include/QtCore/qsharedmemory.h \
+		../../../../Qt/6.8.0/gcc_64/include/QtCore/qtipccommon.h \
+		../../../../Qt/6.8.0/gcc_64/include/QtWidgets/QMessageBox \
+		../../../../Qt/6.8.0/gcc_64/include/QtWidgets/qmessagebox.h \
+		../../../../Qt/6.8.0/gcc_64/include/QtWidgets/qdialog.h \
+		../../../../Qt/6.8.0/gcc_64/include/QtWidgets/qdialogbuttonbox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../../main.cpp
 
 settingswidget.o: ../../settingswidget.cpp ../../settingswidget.h \

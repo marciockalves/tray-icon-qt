@@ -20,6 +20,8 @@ SettingsWidget::SettingsWidget(QWidget *parent)
 
     connect(saveButton, &QPushButton::clicked, this, &SettingsWidget::saveSettings);
 
+
+
 }
 
 void SettingsWidget::saveSettings(){

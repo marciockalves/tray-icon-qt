@@ -52,7 +52,11 @@ int main(int argc, char *argv[])
     });
 
     QObject::connect(&exitAction, &QAction::triggered, &app, &QApplication::quit);
-    // w.show();
+
+    QObject::connect(&app, &QApplication::aboutToQuit, [&](){
+        shareMemory.detach();
+    });
+
 
     return app.exec();
 
